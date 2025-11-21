@@ -66,6 +66,7 @@
             android:layout_weight="1"
             android:orientation="vertical">
             <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/izb"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:background="@drawable/izb"/>

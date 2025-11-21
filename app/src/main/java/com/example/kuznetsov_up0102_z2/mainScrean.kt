@@ -8,12 +8,14 @@ import android.widget.ImageButton
 class mainScrean : AppCompatActivity() {
     lateinit var obs : ImageButton
     lateinit var obs1 : ImageButton
+    lateinit var izb : ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_screan)
         obs = findViewById(R.id.obs)
         obs1 = findViewById(R.id.obs1)
+        izb = findViewById(R.id.izb)
 
         obs.setOnClickListener{
             val intent : Intent  = Intent(this, chatList::class.java)
@@ -22,6 +24,11 @@ class mainScrean : AppCompatActivity() {
 
         obs1.setOnClickListener{
             val intent : Intent  = Intent(this, chatList::class.java)
+            startActivity(intent)
+        }
+
+        izb.setOnClickListener{
+            val intent:Intent = Intent(this, movieScreen::class.java)
             startActivity(intent)
         }
 
